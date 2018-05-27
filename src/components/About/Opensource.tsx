@@ -69,7 +69,11 @@ class Opensource extends React.Component {
         <Row type="flex" align="middle">
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <IllustrationContainer>
-              <img alt="protocol" src={protocol} width="70%" />
+              <img
+                alt="Open Source Derivatives Protocol"
+                src={protocol}
+                width="70%"
+              />
             </IllustrationContainer>
           </Col>
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
@@ -78,9 +82,8 @@ class Opensource extends React.Component {
                 We love open source! Contribute to our project!
               </MarketHeader>
               <OpenSourceText>
-                MARKET Protocol (“MARKET”) has created the open source
-                foundation needed to build decentralized exchanges and conduct
-                trading activities on the Ethereum blockchain.
+                Come join the development community that is building MARKET
+                Protocol
               </OpenSourceText>
               <ButtonWrapper type="primary" style={{ padding: '0 5%' }}>
                 <Link
@@ -123,7 +126,7 @@ class Opensource extends React.Component {
               <MarketHeader>Engineering Weekly</MarketHeader>
               <MarketText style={{ margin: '45px 0px' }}>
                 Dont forget to join us for Engineering Weekly, our technical
-                community call every week!
+                community call that is open to everyone!
               </MarketText>
               <p style={{ fontSize: '24px', fontWeight: '500' }}>
                 Every Thurdsay 8AM MT

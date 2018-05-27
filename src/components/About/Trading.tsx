@@ -78,9 +78,9 @@ class Trading extends React.Component {
                 Derivatives trading on the Ethereum blockchain
               </MarketHeader>
               <TradingText>
-                MARKET Protocol (“MARKET”) has created the open source
-                foundation needed to build decentralized exchanges and conduct
-                trading activities on the Ethereum blockchain.
+                MARKET Protocol has created the open source foundation needed to
+                build decentralized exchanges and conduct trading activities on
+                the Ethereum blockchain.
               </TradingText>
               <TradingText>
                 As an open-source protocol governed by its participants, MARKET
