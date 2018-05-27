@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row } from 'antd';
 import styled from 'styled-components';
 //
-import { MarketHeader, MarketList } from '@src/Styles';
+import { MarketHeader, MarketList, SectionWrapper } from '@src/Styles';
 import asset1 from '@images/asset_1.svg';
 import asset2 from '@images/asset_2.svg';
 import { device, size } from '@src/breakpoints';
@@ -19,19 +19,6 @@ const IllustrationContainer = styled.div`
   }
 `;
 
-export const SectionWrapper = styled.section`
-  padding: 70px;
-  background: #f0f0f0;
-
-  @media ${device.mobileS} and (max-width: ${size.mobileL}) {
-    padding: 0px;
-  }
-
-  @media ${device.desktopS} {
-    padding: 70px 150px;
-  }
-`;
-
 const TextWrapper = styled.div`
   padding: 20px;
 
@@ -42,7 +29,7 @@ const TextWrapper = styled.div`
 
 const Solution = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper style={{ background: '#f0f0f0' }}>
       <Row type="flex" align="middle">
         <Col xs={24} sm={24} md={12} lg={12} xl={12}>
           <IllustrationContainer>

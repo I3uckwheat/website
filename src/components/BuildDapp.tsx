@@ -3,7 +3,7 @@ import { Button, Col, Row } from 'antd';
 import styled from 'styled-components';
 import { Link } from 'react-static';
 
-import { MarketHeader, MarketText } from '@src/Styles';
+import { MarketHeader, MarketText, SectionWrapper } from '@src/Styles';
 import Protocol from '@images/protocol_illustration.svg';
 import { device, size } from '@src/breakpoints';
 
@@ -11,7 +11,7 @@ export const TextWrapper = styled.div`
   padding: 0px 10px;
 
   @media ${device.mobileS} and (max-width: ${size.tablet}) {
-    padding: 30px 0;
+    padding: 30px;
   }
 
   @media ${device.tablet} and (max-width: ${size.laptop}) {
@@ -38,22 +38,6 @@ export const IllustrationWrapper = styled.div`
   }
 `;
 
-export const SectionWrapper = styled.section`
-  padding: 50px 20px;
-
-  @media ${device.tablet} {
-    padding: 30px;
-  }
-
-  @media ${device.laptop} {
-    padding: 70px;
-  }
-
-  @media ${device.desktopS} {
-    padding: 120px;
-  }
-`;
-
 export const ButtonWrapper = styled(Button)`
   margin-top: 20px;
   margin-right: 20px;
@@ -63,10 +47,16 @@ export const ButtonWrapper = styled(Button)`
   }
 `;
 
+const BuildDappWrapper = SectionWrapper.extend`
+  @media ${device.mobileS} and (max-width: ${size.mobileL}) {
+    padding: 30px;
+  }
+`;
+
 class BuildDapp extends React.Component {
   render() {
     return (
-      <SectionWrapper>
+      <BuildDappWrapper>
         <Row type="flex" align="middle">
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <IllustrationWrapper>
@@ -107,7 +97,7 @@ class BuildDapp extends React.Component {
             </TextWrapper>
           </Col>
         </Row>
-      </SectionWrapper>
+      </BuildDappWrapper>
     );
   }
 }

@@ -27,11 +27,11 @@ injectGlobal`
 
 const MarketHeader = styled.h2`
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.1;
 
   @media (max-width: ${size.laptop}) {
-    font-size: 18px;
+    font-size: 26px;
   }
 
   @media ${device.desktopS} {
@@ -102,10 +102,27 @@ const BioModalContentWrap = styled.div`
   }
 `;
 
+const SectionWrapper = styled.section`
+  padding: 70px;
+
+  @media ${device.mobileS} and (max-width: ${size.mobileL}) {
+    padding: 0px;
+  }
+
+  @media ${device.mobileL} and (max-width: ${size.laptop}) {
+    padding: 50px;
+  }
+
+  @media ${device.desktopS} {
+    padding: 120px;
+  }
+`;
+
 export {
   MarketList,
   MarketHeader,
   MarketText,
   BioModalContentWrap,
-  TeamDivWithResponsiveWidth
+  TeamDivWithResponsiveWidth,
+  SectionWrapper
 };
