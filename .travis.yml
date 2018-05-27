@@ -24,6 +24,6 @@ deploy:
     on:
       branch: develop
 script:
-  - npm test -- --coverage
+  - travis_wait 20 npm test -- --coverage
 after_script:
   - npm run coveralls
