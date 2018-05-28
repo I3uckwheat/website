@@ -5,11 +5,11 @@ import heroIllustration from '@images/hero-illustration.svg';
 import Hero, { HeroText, HeroArt } from '@components/Hero';
 
 describe('<Hero />', () => {
-  it('renders section with minHeight 300px', () => {
+  it('renders section with minHeight 498px', () => {
     const component = shallow(<Hero />);
     expect(component.find('section').props().style).to.deep.equal({
       background: '#181E26',
-      minHeight: '300px'
+      minHeight: '498px'
     });
   });
 

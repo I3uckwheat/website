@@ -10,22 +10,23 @@ export const HeroArt = styled.div`
 
   img {
     width: 70%;
+    min-height: 498px;
   }
-  
+
   @media (max-width: ${size.mobileS}) and (max-width: ${size.mobileL}) {
     opacity: 0.4
     margin-top: -80px;
-    
+
     img {
       width: 50%;
     }
   }
-  
+
   @media ${device.mobileS} and (max-width: 767px) {
     opacity: 0.4
     margin-top: -80px;
     z-index: -1;
-    
+
     img {
       width: 50%;
     }
@@ -62,7 +63,7 @@ export const HeroText = styled.h1`
 class Hero extends React.Component {
   render() {
     return (
-      <section style={{ background: '#181E26', minHeight: '300px' }}>
+      <section style={{ background: '#181E26', minHeight: '498px' }}>
         <Row type="flex" className="hero" align="middle">
           <Col xs={24} md={10}>
             <HeroText>
